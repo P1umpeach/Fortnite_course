@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS user(
+user_id integer PRIMARY KEY AUTOINCREMENT,
+course VARCHAR(30) NOT NULL,
+name VARCHAR(50) NOT NULL,
+telephone VARCHAR(30) NOT NULL,
+news_permission BOOL NOT NULL
+);

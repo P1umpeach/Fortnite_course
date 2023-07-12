@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.min.css')}}"/>
+    <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+    <script>new WOW().init();</script>
+    <title>Fortnite course</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="header">
+            <div class="header-inner">
+                <a href="#about">About</a>
+                <a href="#coaches">Coaches</a>
+                <a href="#registration">Buy courses</a>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="basic-wrapper">
+                <div class="title">
+                    <h1>Fortnite</h1>
+                    <h2>Gaming course</h2>
+                </div>
+                <div class="crow">
+                    <img src="./static/images/crow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <div class="rect wow animate__animated animate__slideInRight">
+            <div class="block-title">
+                <h3>About</h3>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="about-wrapper about-block">
+                <div class="season-picture">
+                    <img class="picture" src="./static/images/image3.png" alt="">
+                </div>
+                <div class="about-text">
+                    <div>
+                        <h3 class="ab">What we are about?</h3>
+                        <p class="desc">We will teach you all necessary casual/competitive tactics in Fortnite like: aim tracking, building, box fighting, piece control, zone rotations and whatever you ask. After teaching you all the tactics, we will queue into the game & get some wins.</p>
+                        <h4>No matter what platform you’re playing on</h4>
+                    </div>
+                    <div class="">
+                        <a class="button mg" href="#registration">
+                            <h3 class="button-font">Find coach!</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="purple-block">
+            <div class="page-content">
+                <div class="packages-wrapper">
+                    <div class="title-grid">
+                        <h3>Compare Packages</h3>
+                    </div>
+                    <div class="package basic">
+                        <h4>BASIC</h4>
+                        <p>Short session</p>
+                        <div class="icon">
+                            <img src="./static/images/bronze.png" alt="">
+                        </div>
+                        <p>You will learn some improvement tips, in solo/duo teams. And receive personal recomendations to improve</p>
+                    </div>
+                    <div class="package standart">
+                        <h4>STANDART</h4>
+                        <p>Three months</p>
+                        <div class="icon">
+                            <img src="./static/images/silver.png" alt="">
+                        </div>
+                        <p>You will receive personal recomendations to improve. Your coach will track your games and coach you while playing</p>
+                    </div>
+                    <div class="package premium">
+                        <h4>PREMIUM</h4>
+                        <p>Six months</p>
+                        <div class="icon">
+                            <img src="./static/images/gold.png" alt="">
+                        </div>
+                        <p>Your coach would give you feedback and review your fighting/rotating, improve all your skills snd helps you to win some tournaments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="coaches" class="coaches wow animate__animated animate__slideInLeft">
+            <div class="rect-2">
+                <div class="block-title">
+                    <h3>Coaches</h3>
+                </div>
+            </div>
+        </div>
+            <div class="page-content">
+                <div class="coaches-wrapper">
+                    <div class="about-text">
+                        <div>
+                            <h3 class="ab">About the main coach</h3>
+                            <h4 class="desc">1 700days playtime</h4>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>I am an experienced Fortnite Coach with over 275 satisfied students</li>
+                                <li>I have over 400 wins in Arena</li>
+                                <li>I have reached the Arena Champion League every season during the last years</li>
+                                <li>I am a top 1% player in Competitive Fortnite Europe</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-coach">
+                        <div class="rect-3">
+                            <div class="block-title">
+                                <h3>Ninja</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="registration" class="regist">
+                <div class="page-content">
+                    <div class="reg-wrapper" id="block_form">
+                        <form method="post">
+                            <div class="form-title">
+                                <h3>Get the course</h3>
+                            </div>
+                            {% for msg in get_flashed_messages() %}
+                                <div data-wow-delay="0.3s" class="flash_error wow animate__animated animate__bounceIn">{{ msg }}</div>
+                            {% endfor %}
+                            <select class="choose" name="ch">
+                                <option>Basic</option>
+                                <option>Standart</option>
+                                <option>Premium</option>
+                              </select>
+                            <input type="text" placeholder="name" name="nm">
+                            <input type="checkbox" id="checkbox-id" name="permission" checked/>
+                            <label for="checkbox-id">Send me news</label>
+                            <input type="text" placeholder="email" name="tel">
+                            <input type="submit" class="button-field" value="Создать аккаунт"/>
+                            <div class="button-send">
+                                <h3>SEND</h3>
+                                <img class="arrow" src="./static/images/Arrow.png" alt="">
+                            </div>
+                        </form>
+                        <div class="v-bucks bounce-7">
+                            <img src="./static/images/v-bucks.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="sail">
+                <div class="page-content">
+                    <div class="lama-container">
+                        <div class="test-block">
+                            <img class="lama" src="./static/images/lama.png" alt="">
+                                <a class="test" href="https://www.fortnite.com/creative/island-codes/9998-7346-3263">
+                                    <h3>Test</h3>
+                                </a>
+                        </div>
+                        <div class="test-text">
+                            <h2 class="larger">FIRST TIME HERE? GET YOUR <span class="procentage">15% SAIL</span> NOW</h2>
+                            <div class="paragraph">
+                                <p>PASS THE TEST TO FIND OUT YOUR LEVEL IN GAME AND GET 15% SAIL. SAIL WORKS ONLY FOR NEW MEMBERS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="page-content">
+                    <div class="footer-container">
+                        <div class="footer-title">
+                            <h3>Fortnite</h3>
+                            <h3>course</h3>
+                        </div>
+                        <div class="links">
+                            <p class="fot-links link-title">links</p>
+                            <a class="fot-links">packages</a>
+                            <a class="fot-links">coaches</a>
+                            <a class="fot-links">blog</a>
+                            <a class="fot-links">about us</a>
+                        </div>
+                        <div class="address links">
+                            <p class="fot-links link-title">address</p>
+                            <p class="fot-links">Minsk Kakayato str, 6, 2nd floor<br>
+                                index 223043<br>
+                                mon-fri 08:00-22:00<br>
+                                sat-sun 10:00-20:00</p>
+                        </div>
+                        <div class="contacts links">
+                            <p class="fot-links link-title">contacts</p>
+                            <a class="fot-links">+375(25)530-40-00</a>
+                            <a class="fot-links">info@fortnite.by</a>
+                            <div class="icons">
+                                <a href=""><img src="./static/images/YouTube-Negative.png" alt=""></a>
+                                <a href=""><img src="./static/images/Twitter-Negative.png" alt=""></a>
+                                <a href=""><img src="./static/images/Instagram-Negative.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+</body>
+</html>

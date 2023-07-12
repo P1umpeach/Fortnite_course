@@ -1,0 +1,745 @@
+@font-face {
+    font-family: "Fortnite";
+    src: url(../fonts/fortnite.otf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:root {
+    --var-bgcolor-dark: #fff;
+    --var-fontcolor-dark: #000;
+
+    --var-bgcolor-dark: #262A31;
+    --var-fontcolor-dark: white;
+
+    --var-border-button: #101019;
+
+    --var-purple-background: #402971;
+  }
+
+a{
+    text-transform: uppercase;
+    color: var(--var-fontcolor-dark);
+    text-decoration: none;
+    font-family: "Fortnite";
+}
+
+a:hover{
+    color: #101019;
+    text-decoration: underline;
+}
+
+.button:hover{
+    text-decoration: none;
+    background-color: #ce9701;
+    color:#101019;
+}
+
+img{
+    display: block;
+}
+
+h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14em;
+    font-family: "Fortnite";
+}
+
+h2{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 6em;
+    font-family: "Fortnite";
+}
+
+h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: "Fortnite";
+}
+
+h4{
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.6em;
+    font-family: 'Open Sans';
+}
+
+li{
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.6em;
+    font-family: 'Open Sans';
+}
+
+p{
+    margin: 0;
+    font-size: 1.3em;
+    font-family: 'Open Sans';
+}
+
+body{
+    background-color: var(--var-bgcolor-dark);
+    color: var(--var-fontcolor-dark);
+    margin: 0;
+}
+
+.intro{
+    background-image: url(../images/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-content{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header-inner{
+    font-size: 3em;
+    padding: 30px 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crow{
+    margin-left: -130px;
+}
+
+.about{
+
+    border-top: solid 10px var(--var-border-button);
+}
+
+.rect{
+    display: flex;
+    align-items: center;
+    max-width: 410px;
+    height: 75px;
+    background-image: url(../images/Rectangle1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-title{
+    padding-left: 100px;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 100px;
+}
+
+.about-block{
+    padding: 65px 0;
+}
+
+.season-picture{
+    width: 100%;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button{
+    display: inline-block;
+    padding: 20px;
+    background-color: var(--var-border-button);
+}
+
+.button-font{
+    font-family: 'Fortnite';
+    font-size: 2em;
+}
+
+.purple-block{
+    padding: 5% 0;
+    background-color: var(--var-purple-background)
+}
+
+.packages-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.title-grid{
+    text-align: center;
+    grid-column: 1/4;
+}
+
+.package{
+    padding: 10%;
+    background-color: var(--var-border-button);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+.ab{
+    margin-bottom: 20px;
+}
+
+.desc{
+    margin-bottom: 10px;
+}
+
+.coaches{
+    border-top: solid 10px var(--var-border-button);
+    display: flex;
+    justify-content: end;
+}
+
+.rect-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 410px;
+    height: 75px;
+    background-image: url(../images/Rectangle2.png);
+    background-repeat: no-repeat;
+}
+
+.coaches-wrapper{
+    padding: 5% 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 100px;
+}
+
+.main-coach{
+    display: flex;
+    align-items: end;
+    border-bottom: solid 10px var(--var-border-button);
+    width: 450px;
+    height: 450px;
+    background-image: url(../images/ninja.png);
+}
+
+.rect-3{
+    display: flex;
+    align-items: center;
+    min-width: 325px;
+    height: 70px;
+    background-image: url(../images/Rectangle3.png);
+    background-repeat: no-repeat;
+}
+
+.regist{
+    background-image: url(../images/background-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input{
+    font-size: 1.3em;
+    font-family: 'Open Sans';
+    color: var(--var-fontcolor-dark);   
+    margin: 20px 0;
+    box-sizing: border-box;
+    background-color: var(--var-border-button);
+    padding: 20px 20px;
+    font-size: 1.2;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+}
+
+.reg-wrapper{
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+select{
+    font-size: 1.3em;
+    font-family: 'Open Sans';
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: none;
+    color: var(--var-fontcolor-dark);
+    background-color: var(--var-border-button);
+    border-radius: 40px;
+    padding: 20px 20px;
+    width: 100%;
+}
+  
+option{
+    font-size: 1.3em;
+    font-family: 'Open Sans';
+    color: var(--var-fontcolor-dark);
+}
+
+select:focus{
+
+}
+
+select::placeholder{
+
+}
+
+.checkbox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    display: none;
+    width: auto;
+    margin-right: 20px;
+    padding: 0;
+}
+
+img { pointer-events: none; }
+
+input[type="checkbox"] {
+
+  }
+   
+  label {
+    
+    font-size: 1.3em;
+    font-family: 'Open Sans';
+    cursor: default;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 30px 0;
+    vertical-align: middle;
+  }
+   
+  label:before {
+    margin: 20px 0;
+    content: " ";
+    display: inline-block;
+    font: 20px/30px Arial;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid black;
+    border-image: initial;
+    vertical-align: middle;
+  }
+   
+  input:checked + label:before {
+    content: '\2713';
+  }
+
+  input:disabled + label:before {
+    background: #eee;
+    color: #aaa;
+  }
+
+  .form-title{
+    text-align: center;
+  }
+
+  form{
+    padding: 30% 0;
+  }
+
+  .button-send{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #ce9701;
+    border-radius: 50px;
+    margin: 20px 0;
+  }
+
+  .button-send:hover {
+
+  }
+
+.v-bucks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+
+.lama-container{
+    padding: 20% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.test-block{
+    z-index: 1;
+    margin-right: -27%;
+    display: flex;
+    align-items: center;
+}
+
+.test{
+    display: block;
+    color: #ce9701;
+    padding: 30px 87px;
+    background-image: url(../images/Rectangle-13.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 40%;
+    margin-left: -20%;
+}
+
+.test:hover{
+    color: white;
+    text-decoration: none;
+    background-image: url(../images/Rectangle-14.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.paragraph{
+    width: 58%
+}
+
+.test-text{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.larger{
+    font-size: 8em;
+}
+
+.procentage{
+    color: #ce9701;
+}
+
+.footer{
+    background-color: #402971;
+}
+
+.footer-container{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fot-links{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-title{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.button-send{
+    max-width: 350px;
+}
+
+
+
+@media (max-width: 1600px){
+    .page-content{
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1300px){
+
+
+    .basic-wrapper{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10%;
+    }
+
+   .crow{
+    display: none;
+   } 
+
+   .about-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+
+    .picture{
+        margin: 10% auto;
+    }
+
+    .mg{
+        margin-top: 50px;
+    }
+
+    .basic{
+        display: none;
+    }
+
+    .premium{
+        display: none;
+    }
+
+    .standart{
+        margin: 0 20%;
+        grid-column: 1/4;
+    }
+
+    .rect-2{
+        display: none;
+    }
+
+    .coaches{
+        border: none;
+    }
+
+    .coaches-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list{
+        text-align: start;
+    }
+
+    .v-bucks{
+        display: none;
+    }
+
+    .regist{
+        background-color: #402971;
+        background-image: none;
+    }
+
+    .reg-wrapper{
+        display: block;
+    }
+
+    .lama-container{
+        flex-direction: column-reverse;
+    }
+
+    .paragraph{
+        width: auto;
+    }
+
+    .test-block{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .test{
+
+    }
+}
+
+@media (max-width: 1000px){
+
+    .about{
+        border: none;
+    }
+
+    .rect{
+        display: none;
+    }
+
+    .header-inner{
+        font-size: 2em;
+        padding: 30px 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1{
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 8em;
+        font-family: "Fortnite";
+    }
+
+    h2{
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 4em;
+        font-family: "Fortnite";
+    }
+
+    .larger{
+        font-size: 5em;
+    }
+
+   .crow{
+    display: none;
+   } 
+
+   .address{
+    display: none;
+   }
+
+   .contacts{
+    display: none;
+   }
+
+}
+
+@media (max-width: 800px){
+    .header-inner{
+        font-size: 1.5em;
+        padding: 30px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    h4{
+        font-size: 1em;
+    }
+
+    .mg{
+        margin-top: 20px;
+    }
+
+    .season-picture{
+        display: none;
+    }
+
+    li{
+        font-weight: 400;
+        margin: 0;
+        font-size: 1em;
+        font-family: 'Open Sans';
+    }
+
+    .main-coach{
+        display: flex;
+        align-items: end;
+        border: none;
+        width: 300px;
+        height: 300px;
+        background-image: url(../images/ninja.png);
+        background-size: cover;
+    }
+
+    .rect-3{
+        display: none;
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .lama{
+        height: 300px;
+    }
+
+    .standart{
+        margin: 0 5%;
+        grid-column: 1/4;
+    }
+
+    .larger{
+        font-size: 2em;
+    }
+
+    .test{
+        color: #ce9701;
+        padding: 15px 48px;
+        background-image: url(../images/Rectangle-13.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.bounce-7 {
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.05,.95)   translateY(0); }
+    15%  { transform: scale(.95,1.05)   translateY(-100px); }
+    20%  { transform: scale(1.02,.98) translateY(0); }
+    25%  { transform: scale(1,1)      translateY(-7px); }
+    30%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+.flash_error{
+    color: red;
+    margin-bottom: 20px;
+    font-family: "Open Sans";
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
